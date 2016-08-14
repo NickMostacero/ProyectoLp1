@@ -18,17 +18,19 @@ public class RegistroPer {
     int NumCel;
     String Correo;
     String Cargo;
+    String clave;
 
     public RegistroPer() {
     }
 
-    public RegistroPer(String Nombre, String Apellido, int Edad, int NumCel, String Correo, String Cargo) {
+    public RegistroPer(String Nombre, String Apellido, int Edad, int NumCel, String Correo, String Cargo, String clave) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Edad = Edad;
         this.NumCel = NumCel;
         this.Correo = Correo;
         this.Cargo = Cargo;
+        this.clave = clave;
     }
 
     public int getIdpersona() {
@@ -86,7 +88,16 @@ public class RegistroPer {
     public void setCargo(String Cargo) {
         this.Cargo = Cargo;
     }
-    
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+   
     
     
 }

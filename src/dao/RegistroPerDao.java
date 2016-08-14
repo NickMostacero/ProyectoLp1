@@ -43,6 +43,7 @@ public class RegistroPerDao implements Operaciones<RegistroPer>{
             ps.setInt(4, e.getNumCel());
             ps.setString(5, e.getCorreo());
             ps.setString(6, e.getCargo());
+            ps.setString(7, e.getClave());
             a = ps.executeUpdate();
         } catch (Exception x) {
          JOptionPane.showMessageDialog(null, "error CREATE :" + x);
@@ -83,7 +84,8 @@ public class RegistroPerDao implements Operaciones<RegistroPer>{
             ps.setInt(4, e.getNumCel());
             ps.setString(5, e.getCorreo());
             ps.setString(6, e.getCargo());
-            ps.setInt(7, e.getIdpersona());
+            ps.setString(7, e.getClave());
+            ps.setInt(8, e.getIdpersona());
             
             a = ps.executeUpdate();
         } catch (Exception x) {
@@ -111,6 +113,7 @@ public class RegistroPerDao implements Operaciones<RegistroPer>{
                 dto.setNumCel(rs.getInt("NumCel"));
                 dto.setCorreo(rs.getString("Correo"));
                 dto.setCargo(rs.getString("Cargo"));
+                dto.setClave(rs.getString("Contraseña"));
                 lista.add(dto);
             }
         } catch (Exception e) {

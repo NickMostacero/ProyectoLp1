@@ -43,7 +43,7 @@ public class Test {
         }
     
     public static  void crear (){
-        RegistroPer dto = new RegistroPer("Pancho", "e", 12, 912766257, "dfjasfh", "dsfd");
+        RegistroPer dto = new RegistroPer("Pancho", "e", 12, 912766257, "dfjasfh", "dsfd","ASASAS");
         int a = dao.create(dto);
         if(a>0){
             System.out.println("si");
@@ -53,7 +53,7 @@ public class Test {
         
     }
     public static void update (){
-        RegistroPer dto = new RegistroPer("sds", "ee", 12, 222222222, "daad", "sdw");
+        RegistroPer dto = new RegistroPer("sds", "ee", 12, 222222222, "daad", "sdw","ASSDA");
         dto.setIdpersona(2);
         int a = dao.update(dto);
         if(a>0){
