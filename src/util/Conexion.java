@@ -15,10 +15,10 @@ import javax.swing.JOptionPane;
  * @author cmalaspina1
  */
 public class Conexion {
-   private static String URL = "jdbc:mysql://localhost:3306/bd_RegistroUser";
+   private static String URL = "jdbc:mysql://localhost:3306/bd-RegistroUser";
     private static String DRIVER = "com.mysql.jdbc.Driver";
     private static String USER = "root";
-    private static String CLAVE = "root";
+    private static String CLAVE = "superroot";
     private static Connection cx = null;
     
     
