@@ -24,8 +24,8 @@ public class RegistroPerDao implements Operaciones<RegistroPer>{
     private ResultSet rs;
     private PreparedStatement ps;
     private Connection cx;
-     private static final String Create ="INSERT INTO persona(idpersona, Nombre, Apellidos,Edad, NumCel, Correo, Cargo) VALUES (NULL, ?, ?, ?, ?, ?, ?);";
-     private static final  String update ="UPDATE persona SET Nombre = ? , Apellidos = ?, Edad = ?, NumCel = ?, Correo =?, Cargo = ? WHERE idpersona = ?;";
+     private static final String Create ="INSERT INTO persona(idpersona, Nombre, Apellidos,Edad, NumCel, Correo, Cargo, Contraseña) VALUES (NULL, ?, ?, ?, ?, ?, ?, ?);";
+     private static final  String update ="UPDATE persona SET Nombre = ? , Apellidos = ?, Edad = ?, NumCel = ?, Correo =?, Cargo = ?, Contraseña=? WHERE idpersona = ?;";
      private static final  String delete ="DELETE FROM persona WHERE idpersona = ?";
      private static final String ReadAll ="SELECT * FROM persona";
     

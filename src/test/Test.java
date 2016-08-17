@@ -25,10 +25,10 @@ public class Test {
     public static void main(String[] args) {
         // TODO code application logic here
 //        conex();
-//        crear();
-        //update();
+    //crear();
+        update();
     //delete();
-    listar();
+    //listar();
     }
     public static void conex()
     {
